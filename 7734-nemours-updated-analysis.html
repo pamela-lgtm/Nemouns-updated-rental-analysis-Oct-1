@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updated Rental Analysis — 7734 Nemours Parkway | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;
+--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;
+--red:#B5543C;--rose:#D4886F;--green:#4E8C6A;--slate:#6B7C8C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;font-weight:400;font-size:16.5px;line-height:1.68}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.5rem;line-height:1.1;margin:0 0 .4rem}
+h2{font-size:1.8rem;line-height:1.2;margin:0 0 .8rem}
+h3{font-size:1.18rem;margin:1.4rem 0 .45rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+.mast{background:var(--charcoal);color:#F5F3EE;padding:28px 0 30px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto;text-align:right;line-height:1.5}
+.kicker{color:var(--gold);font-size:.9rem;margin:22px 0 4px}
+.mast h1{color:#FBFAF7;margin-top:4px}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1rem}
+.rec{background:var(--teal);color:#fff;padding:32px 0 30px}
+.rec h2{color:#fff;font-size:1.5rem;margin-bottom:.3rem}
+.rec .lead{color:#D6EDEA;max-width:70ch;margin-bottom:24px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.28);border-radius:10px;overflow:hidden}
+.step{background:var(--teal);padding:20px}
+.step .k{font-size:.82rem;color:#CDE8E5;margin-bottom:6px}
+.step .v{font-family:'Cormorant Garamond',serif;font-size:2.4rem;line-height:1;color:#fff}
+.step .n{font-size:.87rem;color:#CDE8E5;margin-top:7px;line-height:1.45}
+.step:first-child{background:var(--teal-deep)}
+section{padding:38px 0;border-top:1px solid var(--line)}
+.snum{color:var(--teal-deep);font-size:.9rem;margin:0 0 .2rem}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin:0 0 20px}
+.fact{padding:14px 17px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact .k{font-size:.79rem;color:var(--muted);margin-bottom:2px}
+.fact .v{font-weight:600;color:var(--strong)}
+.confirm{color:#8A6D0B;background:#FBF3D8;padding:1px 7px;border-radius:4px;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 20px}
+.st{background:#fff;padding:18px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.warn{color:var(--red)}
+.st .k{font-size:.85rem;color:var(--muted);margin-top:5px;line-height:1.45}
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;border-radius:0 8px 8px 0;margin:0 0 22px}
+.pull p:last-child{margin-bottom:0}
+.anchor{background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:10px;padding:22px 26px;margin:0 0 22px}
+.anchor h3{margin-top:0;font-size:1.3rem}
+.anchor .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin:14px 0 0}
+.anchor .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.anchor .row b{color:var(--teal-deep)}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 24px;margin:0 0 20px}
+.box h3{margin-top:0}
+.box p:last-child{margin-bottom:0}
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 14px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 17px}
+.dbody > *:last-child{margin-bottom:0}
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;background:#fff;min-width:680px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+tr.gold td{background:#FBF3D8}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.86rem;padding-top:9px}
+.pill{display:inline-block;font-size:.77rem;padding:2px 8px;border-radius:20px;font-weight:500}
+.fast{background:#DFF0EC;color:#00625B}.slow{background:#F6E3DE;color:#8A3B26}
+.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.chart h3{margin:0 0 4px}
+.chart .cap{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+.bar{display:grid;grid-template-columns:190px 1fr;gap:13px;align-items:center;margin-bottom:11px;font-size:.9rem}
+.track{background:var(--panel);border-radius:4px;height:26px;overflow:hidden}
+.fill{height:26px;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-weight:600;font-size:.85rem;white-space:nowrap}
+.fill.t{background:var(--teal)}.fill.g{background:var(--gold)}.fill.r{background:var(--red)}.fill.s{background:var(--slate)}.fill.gr{background:var(--green)}
+.src{font-size:.85rem;color:var(--muted);margin:14px 0 0;padding-top:13px;border-top:1px solid var(--line)}
+footer{background:var(--charcoal);color:#B8B2A8;padding:30px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+footer a{color:#8FD2CB}
+@media(max-width:720px){body{font-size:16px}h1{font-size:1.95rem}h2{font-size:1.45rem}.steps{grid-template-columns:1fr}.anchor .grid{grid-template-columns:1fr}.mast .tag{margin-left:0;width:100%;text-align:left}.bar{grid-template-columns:120px 1fr;font-size:.82rem}}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Updated Rental Analysis<br>October 1, 2026</span>
+    </div>
+    <p class="kicker">Laureate Park Neighborhood Center · Lake Nona</p>
+    <h1>7734 Nemours Parkway</h1>
+    <p class="sub">Orlando, FL 32827 · Townhome, 3 stories · 3 bed / 3.5 bath · 2,016 sq ft · 2-car garage · Built 2021 · <b style="color:#C9A227">Corner unit</b></p>
+  </div>
+</header>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Our recommendation</h2>
+    <p class="lead">In August we recommended $3,195 and flagged three homes sitting unleased. All three have now leased, and what happened to them changes the number. <b style="color:#fff">Our goal is a signed lease within 21 days</b>, and this analysis explains why that goal is worth more to you than any asking price on the listing.</p>
+    <div class="steps">
+      <div class="step"><div class="k">Launch price</div><div class="v">$2,995</div><div class="n">Under the $3,000 search threshold, and below every recent lease in the community.</div></div>
+      <div class="step"><div class="k">Day 5 checkpoint</div><div class="v">$2,925</div><div class="n">If showings aren't strong enough to let us choose a resident, we move by an amount renters notice.</div></div>
+      <div class="step"><div class="k">Day 12</div><div class="v">$2,875</div><div class="n">A step, not a bottom. We keep reading the market and moving with it.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section style="border-top:none">
+  <p class="snum">Section One</p>
+  <h2>What we confirmed <em>since August</em></h2>
+  <p>Our August analysis listed four items to verify before setting a final number. We have now walked the home, and the answers move the valuation in your favor.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Open in August</th><th>Confirmed</th><th>Effect</th></tr></thead>
+    <tbody>
+      <tr><td>Corner or interior unit</td><td><b>True corner unit</b></td><td class="pos">Positive — real value</td></tr>
+      <tr><td>Water or park view</td><td>No water view</td><td>Neutral</td></tr>
+      <tr><td>Condition walkthrough</td><td>Excellent — hard floors throughout, high-quality finishes, immaculate</td><td class="pos">Positive</td></tr>
+      <tr><td>Washer and dryer</td><td><b>Hookups only</b></td><td class="neg">Negative — see below</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p><b>The corner unit matters more than most owners expect.</b> It is not only one less shared wall. The corner windows flood the second-floor living area with natural light that an interior unit physically cannot produce, and renters notice it within seconds of walking in. In this comparable set, the fastest lease of the entire year was a corner unit.</p>
+
+  <p>The home also has a <b>Tesla charger in the two-car garage</b>, a first-floor bedroom with full bath that works as a guest suite, in-law space, office or gym, and three bedrooms that each have their own bathroom. That configuration is still the strongest in this competitive set.</p>
+
+  <div class="pull">
+    <p>On the washer and dryer — nearly every competing listing includes them. Hookups alone is the kind of detail a renter quietly deducts for and does not mention. We would recommend providing a set. It is a modest one-time cost that removes an objection we would otherwise never hear about.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Two</p>
+  <h2>What happened to the three homes <em>we warned you about</em></h2>
+  <p>In August, three homes in your community were sitting unleased at $3,150, $3,200 and $3,250. We said at the time that launching into that group was how a listing becomes the fourth one sitting. Here is where each of them stands today.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Property</th><th class="num">Launched at</th><th class="num">Leased at</th><th class="num">Days</th><th>Leased</th></tr></thead>
+    <tbody>
+      <tr class="bad"><td>8472 Sperry St <span style="color:var(--muted)">(2022, 2,016 sf)</span></td><td class="num">$3,500</td><td class="num">$3,100</td><td class="num"><span class="pill slow">83</span></td><td>Sept 23</td></tr>
+      <tr class="bad"><td>13170 Bovet Ave <span style="color:var(--muted)">(2021, 1,998 sf)</span></td><td class="num">$3,200</td><td class="num">$3,200</td><td class="num"><span class="pill slow">75</span></td><td>Sept 30</td></tr>
+      <tr><td>13140 Bovet Ave <span style="color:var(--muted)">(2021, 1,998 sf)</span></td><td class="num">$3,250</td><td class="num">Still unleased</td><td class="num"><span class="pill slow">58</span></td><td>—</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p><b>8472 Sperry launched at $3,500 in June.</b> It cut three times and finally leased at <b>$3,100</b> on September 23 — <b>$400 below where it started</b>, after 83 days of vacancy.</p>
+  <p><b>13170 Bovet is the more interesting one</b>, because on paper it looks like a success. It asked $3,200 and leased at $3,200 — 100% of asking price. The owner got his number.</p>
+
+  <div class="pull">
+    <p>It took him <b>75 days</b> to get it. We will come back to what that actually cost him, because it is the single most useful number in this report.</p>
+  </div>
+
+  <p>And 13140 Bovet, which was 22 days old when we wrote the August report, is now at <b>58 days</b> and still available at $3,250.</p>
+</section>
+
+<section>
+  <p class="snum">Section Three</p>
+  <h2>What has actually leased <em>— and what hasn't</em></h2>
+  <p>Every one of the homes below is a <b>leased</b> comparable. These are not asking prices; they are the rents the market actually paid, with the number of days each home sat before it leased.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Leased comparable</th><th class="num">Sq ft</th><th class="num">Built</th><th>Position</th><th class="num">Rent achieved</th><th class="num">Days to lease</th><th>Date leased</th></tr></thead>
+    <tbody>
+      <tr><td>12378 Koshiba Aly</td><td class="num">1,998</td><td class="num">2022</td><td><b>Waterfront — prime stretch</b></td><td class="num">$3,500</td><td class="num">31</td><td>Jul 27</td></tr>
+      <tr class="gold"><td>12977 Gabor Ave</td><td class="num">1,998</td><td class="num">2021</td><td><b>Corner + waterfront</b></td><td class="num">$3,300</td><td class="num"><span class="pill fast">0</span></td><td>Jul 31</td></tr>
+      <tr><td>13366 Bovet Ave <span style="color:var(--muted)">(2 bed)</span></td><td class="num">2,167</td><td class="num">2018</td><td>Interior</td><td class="num">$3,200</td><td class="num">16</td><td>Aug 12</td></tr>
+      <tr><td>13170 Bovet Ave</td><td class="num">1,998</td><td class="num">2021</td><td>Interior</td><td class="num">$3,200</td><td class="num"><span class="pill slow">75</span></td><td>Sep 30</td></tr>
+      <tr><td>8618 Warburg Aly</td><td class="num">2,167</td><td class="num">2022</td><td>End unit + waterfront</td><td class="num">$3,100</td><td class="num"><span class="pill slow">70</span></td><td>Sep 14</td></tr>
+      <tr><td>8472 Sperry St</td><td class="num">2,016</td><td class="num">2022</td><td>Interior</td><td class="num">$3,100</td><td class="num"><span class="pill slow">83</span></td><td>Sep 23</td></tr>
+      <tr class="hi"><td>12941 Gabor Ave</td><td class="num">1,998</td><td class="num">2021</td><td>Interior</td><td class="num">$3,000</td><td class="num"><span class="pill fast">19</span></td><td>Sep 24</td></tr>
+      <tr><td>13335 Bovet Ave</td><td class="num">2,100</td><td class="num">2019</td><td>End unit</td><td class="num">$3,000</td><td class="num"><span class="pill fast">8</span></td><td>Aug 5</td></tr>
+    </tbody>
+    <caption>Eight leased comparables. All three bed / three and a half bath unless noted. Stellar MLS, October 1, 2026.</caption>
+  </table>
+  </div>
+
+  <p>And here is what has <b>not</b> leased — the homes still available in your community today, competing for the same renter you are.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Still available</th><th class="num">Sq ft</th><th class="num">Built</th><th>Position</th><th class="num">Asking</th><th class="num">Days so far</th></tr></thead>
+    <tbody>
+      <tr class="bad"><td>13140 Bovet Ave</td><td class="num">1,998</td><td class="num">2021</td><td>Interior</td><td class="num">$3,250</td><td class="num"><span class="pill slow">58</span></td></tr>
+      <tr class="bad"><td>8200 Elion St <span style="color:var(--muted)">(4 bed)</span></td><td class="num">2,242</td><td class="num">2018</td><td>Waterfront</td><td class="num">$3,400</td><td class="num">12</td></tr>
+    </tbody>
+    <caption>Asking prices, not achieved rents. Neither home has found a renter.</caption>
+  </table>
+  </div>
+
+  <div class="pull">
+    <p>Read those two tables together. Nothing has <b>leased</b> above $3,200 since July unless it was on the water. And the one home still asking $3,250 has been sitting for 58 days.</p>
+  </div>
+
+  <h3>Three things this tells us</h3>
+  <p><b>Waterfront still earns the premium, and position on the water matters.</b> The two highest rents in the set are both on the water. 12378 Koshiba sits on the best stretch of it and took <b>$3,500</b>. 12977 Gabor is on the same water in a less prominent position, is a corner unit, and took <b>$3,300</b> — leasing the day it listed. Homes off the water are landing between $3,000 and $3,200.</p>
+  <p><b>September was materially weaker than July.</b> The four homes that leased in September took <b>19, 70, 75 and 83 days</b>. Only one of them moved quickly, and it was the cheapest.</p>
+  <p><b>Speed now lives below $3,100.</b> Every September lease at $3,100 or above took 70 days or more. The only fast lease in September was 12941 Gabor at <b>$3,000, in 19 days</b> — an interior unit with no view and none of your home's advantages.</p>
+
+  <details>
+    <summary>How we adjusted the comparables to your home</summary>
+    <div class="dbody">
+      <p>We worked from 12941 Gabor Avenue, because it is the most recent fast lease and the closest match on size and age — 1,998 square feet, 2021, same Ashton Woods product.</p>
+      <div class="tscroll">
+      <table>
+        <thead><tr><th>Adjustment</th><th class="num">Amount</th></tr></thead>
+        <tbody>
+          <tr><td>12941 Gabor Ave — leased September 24, 19 days</td><td class="num">$3,000</td></tr>
+          <tr><td>Corner unit versus interior</td><td class="num pos">+$100</td></tr>
+          <tr><td>Condition and finish level above the comparable</td><td class="num pos">+$50</td></tr>
+          <tr><td>Tesla charger in garage</td><td class="num pos">+$25</td></tr>
+          <tr><td>No washer and dryer provided</td><td class="num neg">−$50</td></tr>
+          <tr class="hi"><td>Indication</td><td class="num">$3,125</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>So the home is genuinely <b>worth</b> around $3,125 on current evidence — and if you provide a washer and dryer, closer to $3,175.</p>
+      <p>What a home is worth and what it should be <b>listed at</b> are two different questions, and the next section explains why. Every September lease at or above $3,100 took 70 days or more.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <p class="snum">Section Four</p>
+  <h2>Two things that decide the outcome <em>before the first showing</em></h2>
+
+  <h3>A listing's value drops the longer it sits</h3>
+  <p>This is the part that is hardest to see from the outside, and it costs owners real money.</p>
+  <p>A home gets more attention in its <b>first two weeks</b> than at any other point in its life. Every renter actively searching that price range sees it as new inventory, and the listing sites push it accordingly. That is when the most motivated, best-qualified prospects look — the ones who have already decided to move and are choosing between options.</p>
+  <p>After that, the audience changes. A renter who has been searching for a few weeks starts recognising the same listings, and a home they have seen repeatedly stops reading as available and starts reading as <b>rejected</b>.</p>
+
+  <div class="pull">
+    <p>They do not think "that one is still there." They think "something must be wrong with it, or it is not worth what they are asking." Nobody says that out loud, and we never get the feedback — they simply never enquire.</p>
+  </div>
+
+  <p>You can watch it happen in this data. 8472 Sperry launched at $3,500 and ended up leasing at $3,100 — <b>below two homes that leased weeks earlier</b>. By the time its price was finally right, the market had already seen it, formed an opinion and moved on. The price was eventually correct; the listing was already stale.</p>
+  <p>That is why the launch price is the single most important decision in this process. It is not a number you can test and adjust at no cost. Testing it spends the most valuable two weeks the listing will ever have.</p>
+
+  <h3>On what another company might tell you</h3>
+  <p>You may well speak with a company that quotes you a higher rent than we have. We want to be straight with you about how that usually plays out, because it is the most common thing said in this business.</p>
+  <p><b>Any agent can ask whatever number you want to hear. No agent can make the market pay it.</b> We are all selling into the same market, to the same renters, on the same weekend.</p>
+  <p>What happens next is predictable. You sign, feeling good about the number. The home goes live high. Three weeks pass with little activity, and now you feel committed — to the company and to the price. A reduction is suggested. Then another. Eventually the home leases at roughly what the market was always going to pay.</p>
+
+  <div class="pull">
+    <p>You arrive at market rent either way. The only difference is how many weeks of vacancy you paid for on the journey — and vacancy is the one expense you can never earn back.</p>
+  </div>
+
+  <p>We would rather tell you the honest number now and be judged on whether we were right, than tell you a flattering one and have you discover it in November.</p>
+</section>
+
+<section>
+  <p class="snum">Section Five</p>
+  <h2>The number on the lease is <em>not the rent you receive</em></h2>
+  <p>This is the most important section of this report, and it is the one owners most often skip past.</p>
+  <p>Vacancy is the only expense a rental property has that can <b>never be recovered</b>. A repair bill is a cost you can plan for. A vacant month is money that simply does not exist and never will. It does not appear on any statement as a charge, which is exactly why it gets underweighted.</p>
+  <p>So the number that matters is not the monthly rent. It is the <b>effective monthly rent</b> — what you actually collect across twelve months, divided by twelve, after vacancy is taken out.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Scenario</th><th class="num">Rent</th><th class="num">Days vacant</th><th class="num">Collected over 12 months</th><th class="num">Effective monthly rent</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td><b>Our recommendation</b></td><td class="num">$2,995</td><td class="num">21</td><td class="num">$33,872</td><td class="num"><b>$2,823</b></td></tr>
+      <tr><td>Hold for $3,195, leases in 60 days</td><td class="num">$3,195</td><td class="num">60</td><td class="num">$32,038</td><td class="num">$2,670</td></tr>
+      <tr class="bad"><td>13170 Bovet — got full asking price</td><td class="num">$3,200</td><td class="num">75</td><td class="num">$30,510</td><td class="num">$2,542</td></tr>
+      <tr class="bad"><td>8618 Warburg — end unit on the water</td><td class="num">$3,100</td><td class="num">70</td><td class="num">$30,066</td><td class="num">$2,505</td></tr>
+      <tr class="bad"><td>8472 Sperry — launched at $3,500</td><td class="num">$3,100</td><td class="num">83</td><td class="num">$28,741</td><td class="num">$2,395</td></tr>
+      <tr><td>12941 Gabor — leased in 19 days</td><td class="num">$3,000</td><td class="num">19</td><td class="num">$34,126</td><td class="num">$2,844</td></tr>
+    </tbody>
+    <caption>Twelve months measured from today. Effective rent is total collected divided by twelve.</caption>
+  </table>
+  </div>
+
+  <div class="big">
+    <div class="n neg">$3,616</div>
+    <p>Compare the top performer with the one that looks best on paper. <b>12941 Gabor leased at $3,000 in 19 days and collects $34,126.</b> <b>13170 Bovet held out for $3,200 and got every dollar of it — after 75 days — and collects $30,510.</b></p>
+    <p>The owner who accepted $200 a month less earned <b>$3,616 more</b>. His effective rent was $2,844 against $2,542. That is a $302 a month difference, in favor of the lower number.</p>
+  </div>
+
+  <div class="pull">
+    <p>13170 Bovet got 100% of his asking price. On the listing it looks like a win. In the bank account it was the second-worst outcome in the entire comparable set.</p>
+    <p>Do not let the number on the lease fool you. The effective rent is the real rent.</p>
+  </div>
+
+  <p>At our recommended $2,995 leased within 21 days, your effective rent is <b>$2,823</b>. To beat that by holding out for $3,195, the home would need to lease in <b>under 25 days</b> — and no home in this community has leased above $3,100 in under 31 days since July.</p>
+</section>
+
+<section>
+  <p class="snum">Section Six</p>
+  <h2>Why $2,995</h2>
+  <div class="box">
+    <h3>It clears the $3,000 search threshold</h3>
+    <p>Renters filter by price before they look at a single photograph. $3,000 is one of the most common ceilings in this market, and at $3,095 or above your home never appears for those searches — not lower down the page, absent entirely. At $2,995 it is the only home of this calibre they will see.</p>
+  </div>
+  <div class="box">
+    <h3>It makes your home the obvious value</h3>
+    <p>At $2,995 you are below every home that has leased in this community since July, while offering a corner position, superior finishes, three ensuite bedrooms and a first-floor guest suite. A renter comparing your home to 12941 Gabor at $3,000 sees more home for less money.</p>
+  </div>
+  <div class="box">
+    <h3>It targets the only speed the market is still producing</h3>
+    <p>One home has leased in under 20 days since August. It was at $3,000, and it had none of your advantages. Pricing at $2,995 with a better product is how we beat 19 days rather than matching it.</p>
+  </div>
+  <div class="box">
+    <h3>The arithmetic favors it decisively</h3>
+    <p>Launching at $2,995 rather than $3,195 gives up $200 a month on paper. Every vacant day costs <b>$98</b>. The reduction pays for itself in <b>24 days</b> of avoided vacancy — and the two most recent comparable leases took 75 and 83 days.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Seven</p>
+  <h2>How we'll manage it</h2>
+  <p>We will not promise you a number of days. What we will do is set a goal, measure it honestly, and act.</p>
+  <p><b>The goal is a signed lease within 21 days.</b> We watch the first five closely — inquiries, showings booked, and showings actually attended. If that activity is not strong enough for us to <b>choose</b> a well-qualified resident rather than accept whoever applies, we move to $2,925 at day five. If the market says that is still not enough, we go to $2,875 at day twelve and keep reading it.</p>
+  <p>$2,875 is a step, not a bottom. Only the market knows where the bottom is. Our commitment is to keep moving with it rather than defending a number we chose in advance.</p>
+
+  <div class="pull">
+    <p>One home remains unleased in your community — 13140 Bovet at $3,250, now 58 days in. A fourth is newly listed at $3,400. We watch both daily, because the moment either reduces, the field moves and we need to move with it.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Eight</p>
+  <h2>Summary</h2>
+  <ul>
+    <li><b>Two of the three homes we flagged in August have now rented, and neither did well — the third is still sitting.</b> 8472 Sperry launched at $3,500 and leased at <b>$3,100 after 83 days</b>. 13170 Bovet held $3,200 and needed <b>75 days</b>. 13140 Bovet is still available at 58 days.</li>
+    <li><b>September leases came in at $3,000, $3,100, $3,100 and $3,200.</b> The only one that moved quickly — 19 days — was the $3,000.</li>
+    <li>Your home is confirmed a <b>true corner unit</b> in excellent condition, worth roughly <b>$3,125</b> on current evidence. But every September lease at or above $3,100 took 70 days or more.</li>
+    <li><b>The effective rent is what matters.</b> 12941 Gabor took $3,000 in 19 days and collected <b>$34,126</b>. 13170 Bovet got full price at $3,200 after 75 days and collected <b>$30,510</b> — <b>$3,616 less</b>.</li>
+    <li>At <b>$2,995 leased in 21 days</b>, your effective rent is <b>$2,823</b> — better than every outcome in this set except the one we are modelling ourselves on.</li>
+    <li><b>Provide a washer and dryer.</b> Nearly every competitor includes them, and it is worth roughly $50 a month plus the objections we never hear.</li>
+    <li><b>The first two weeks are the most valuable the listing will ever have.</b> A home that sits starts reading to renters as rejected rather than available — which is how 8472 Sperry ended up leasing below homes that had leased weeks earlier.</li>
+    <li><b>Any company can quote you a higher number; none can make the market pay it.</b> You reach market rent either way. The only variable is how many weeks of vacancy you buy on the way there.</li>
+  </ul>
+
+  <div class="pull">
+    <p>Vacancy is the one expense that can never be recouped. Every other cost in this business can be planned for, financed, or recovered over time. A vacant day is simply gone.</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b><br>Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · <a href="tel:4078550331">407-855-0331</a></p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">Market data sourced from Stellar MLS as of October 1, 2026, and is deemed reliable but not guaranteed. Comparable analysis reflects three-bedroom townhome rentals of 1,998 to 2,242 square feet in Laureate Park Neighborhood Center. Square footage shown as 2,016 to match MLS measurement of this Ashton Woods floor plan; county records 2,167. This is an opinion of value, not an appraisal. Effective rent figures assume a twelve-month measurement window beginning today and exclude make-ready and leasing costs.</p>
+  </div>
+</footer>
+
+</body>
+</html>
